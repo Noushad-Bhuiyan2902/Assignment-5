@@ -6,18 +6,28 @@
     <title>New Document</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        .poppins-regular {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
 </head>
-<body class="bg-slate-200">
-    <section class="px-24 py-8">
+<body class="bg-slate-200 poppins-regular">
+    <section class="px-12 py-8">
         <nav class="flex flex-row justify-between items-center bg-white rounded-lg p-6 m-4">
             <section class="flex flex-row justify-start items-center gap-3">
                 <img src="./assets/logo.png" alt="logo picture">
-                <h1 class="text-3xl">Dev<span class="font-extrabold">Board</span></h1>
+                <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
             </section>
             <section class="flex flex-row justify-between items-center gap-16">
                 <div class="flex flex-row items-center gap-4 p-3 bg-slate-100 rounded-3xl">
                     <img src="./assets/checkbox.png" alt="Ticked image">
-                    <h1 class="text-3xl font-extrabold">23</h1>
+                    <h1 id="Comp" class="text-3xl font-bold">23</h1>
                 </div>
                 <div class="p-3 bg-slate-100 rounded-full">
                     <img src="./assets/theme-btn.png" alt="Theme button">
@@ -30,13 +40,13 @@
                 
                 <div class="border-dashed border-b-2 border-slate-200">
                     <div class="flex flex-row justify-between gap-4 mb-6 p-6">
-                        <div class="w-3/12 flex flex-row justify-between items-center gap-6 p-5 bg-slate-100 rounded-lg">
+                        <div class="w-3/12 flex flex-row justify-start items-center gap-5 p-4 bg-slate-100 rounded-lg">
                             <div class="p-3 bg-white rounded-full">
                                 <img src="./assets/checkbox.png" alt="Checked">
                             </div>
                             <div class="flex flex-col justify-center text-left">
-                                <h2 class="font-medium text-slate-500">Task Assigned</h2>
-                                <h1 class="text-3xl font-extrabold">05</h1>
+                                <h3 class="font-medium text-slate-500">Task Assigned</h3>
+                                <h1 id="Pend" class="text-2xl font-bold">06</h1>
                             </div>
                         </div>
     
@@ -45,18 +55,18 @@
                             <p class="text-xl font-bold text-white">Discover Something<br>New Today!</p>
                         </div>
     
-                        <div class="w-3/12 flex flex-row justify-start items-center gap-6 p-5 bg-slate-100 rounded-lg">
+                        <div class="w-3/12 flex flex-row justify-start items-center gap-4 p-5 bg-slate-100 rounded-lg">
                             <div class="p-3 bg-white rounded-full"> 
                                 <img src="./assets/calender.png" alt="Board">
                             </div>
-                            <p class="text-xl font-bold">Wed,<br>Jul 28 2025</p>
+                            <p class="text-xl font-medium">Wed,<br>Jul 28 2025</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="grid grid-cols-3 my-4 gap-4 p-6">
-                    <div class="bg-slate-100 p-6 rounded-xl flex flex-col gap-2">
-                        <div class="bg-white rounded-lg p-2 w-5/12 text-center">
+                    <div class="bg-slate-100 p-6 rounded-xl flex flex-col gap-4">
+                        <div class="bg-white rounded-lg p-2 w-6/12 text-center">
                             <h4 class="font-semibold">ShopEase</h4>
                         </div>
                         <h1 class="font-bold text-xl">Fix Mobile Button Issue </h1>
@@ -66,14 +76,14 @@
                         <div class="flex flex-row justify-between items-center">
                             <div class="flex flex-col gap-1 text-left">
                                 <h3>Deadline</h3>
-                                <p class="font-bold">21 March 2025</p>
+                                <p class="font-semibold">21 March 2025</p>
                             </div>
-                            <button class="btn bg-blue-600 rounded-lg text-white">Completed</button>
+                            <button id="Inc-1" class="btn bg-blue-600 rounded-lg text-white jiggly">Completed</button>
                         </div>
                     </div>
 
-                    <div class="bg-slate-100 p-6 rounded-xl flex flex-col gap-2">
-                        <div class="bg-white rounded-lg p-2 w-5/12 text-center">
+                    <div class="bg-slate-100 p-6 rounded-xl flex flex-col gap-4">
+                        <div class="bg-white rounded-lg p-2 w-6/12 text-center">
                             <h4 class="font-semibold">SwiftPay</h4>
                         </div>
                         <h1 class="font-bold text-xl">Add Dark Mode</h1>
@@ -83,14 +93,14 @@
                         <div class="flex flex-row justify-between items-center">
                             <div class="flex flex-col gap-1 text-left">
                                 <h3>Deadline</h3>
-                                <p class="font-bold">21 March 2025</p>
+                                <p class="font-semibold">21 March 2025</p>
                             </div>
-                            <button class="btn bg-blue-600 rounded-lg text-white">Completed</button>
+                            <button id="Inc-2" class="btn bg-blue-600 rounded-lg text-white jiggly">Completed</button>
                         </div>
                     </div>
 
-                    <div class="bg-slate-100 p-6 rounded-xl flex flex-col gap-2">
-                        <div class="bg-white rounded-lg p-2 w-5/12 text-center">
+                    <div class="bg-slate-100 p-6 rounded-xl flex flex-col gap-4">
+                        <div class="bg-white rounded-lg p-2 w-6/12 text-center">
                             <h4 class="font-semibold">CloudSync</h4>
                         </div>
                         <h1 class="font-bold text-xl">Optimize  Home page</h1>
@@ -100,14 +110,14 @@
                         <div class="flex flex-row justify-between items-center">
                             <div class="flex flex-col gap-1 text-left">
                                 <h3>Deadline</h3>
-                                <p class="font-bold">21 March 2025</p>
+                                <p class="font-semibold">21 March 2025</p>
                             </div>
                             <button class="btn bg-blue-600 rounded-lg text-white">Completed</button>
                         </div>
                     </div>
 
-                    <div class="bg-slate-100 p-6 rounded-xl flex flex-col gap-2">
-                        <div class="bg-white rounded-lg p-2 w-5/12 text-center">
+                    <div class="bg-slate-100 p-6 rounded-xl flex flex-col gap-4">
+                        <div class="bg-white rounded-lg p-2 w-6/12 text-center">
                             <h4 class="font-semibold">Meta</h4>
                         </div>
                         <h1 class="font-bold text-xl">Add new emoji 🤲</h1>
@@ -117,14 +127,14 @@
                         <div class="flex flex-row justify-between items-center">
                             <div class="flex flex-col gap-1 text-left">
                                 <h3>Deadline</h3>
-                                <p class="font-bold">21 March 2025</p>
+                                <p class="font-semibold">21 March 2025</p>
                             </div>
                             <button class="btn bg-blue-600 rounded-lg text-white">Completed</button>
                         </div>
                     </div>
 
-                    <div class="bg-slate-100 p-6 rounded-xl flex flex-col gap-2">
-                        <div class="bg-white rounded-lg p-2 w-5/12 text-center">
+                    <div class="bg-slate-100 p-6 rounded-xl flex flex-col gap-4">
+                        <div class="bg-white rounded-lg p-2 w-6/12 text-center">
                             <h4 class="font-semibold">Google LLC</h4>
                         </div>
                         <h1 class="font-bold text-xl">Integrate OpenAI API</h1>
@@ -134,24 +144,24 @@
                         <div class="flex flex-row justify-between items-center">
                             <div class="flex flex-col gap-1 text-left">
                                 <h3>Deadline</h3>
-                                <p class="font-bold">21 March 2025</p>
+                                <p class="font-semibold">21 March 2025</p>
                             </div>
                             <button class="btn bg-blue-600 rounded-lg text-white">Completed</button>
                         </div>
                     </div>
 
-                    <div class="bg-slate-100 p-6 rounded-xl flex flex-col gap-2">
-                        <div class="bg-white rounded-lg p-2 w-5/12 text-center">
+                    <div class="bg-slate-100 p-6 rounded-xl flex flex-col gap-4">
+                        <div class="bg-white rounded-lg p-2 w-6/12 text-center">
                             <h4 class="font-semibold">GlassDoor</h4>
                         </div>
                         <h1 class="font-bold text-xl">Improve Job searching</h1>
                         <div class="p-2 bg-white h-18 text-left rounded-lg ">
                             <p class="truncate">Debug using Chrome <br>DevTools, check for overlapping elements, and ensure onClick works properly.</p>
                         </div>
-                        <div class="flex flex-row justify-between items-center">
+                        <div class="flex flex-row justify-between items-center gap-2">
                             <div class="flex flex-col gap-1 text-left">
                                 <h3>Deadline</h3>
-                                <p class="font-bold">21 March 2025</p>
+                                <p class="font-semibold">21 March 2025</p>
                             </div>
                             <button class="btn bg-blue-600 rounded-lg text-white">Completed</button>
                         </div>
@@ -171,5 +181,7 @@
             </section>
         </section>
     </section>
+
+    <script src="./Scripts/main.js"></script>
 </body>
 </html>
