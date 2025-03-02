@@ -17,7 +17,7 @@
         }
     </style>
 </head>
-<body class="bg-slate-200 poppins-regular">
+<body id="Container" class="bg-slate-200 poppins-regular">
     <section class="px-12 py-8">
         <nav class="flex flex-row justify-between items-center bg-white rounded-lg p-6 m-4">
             <section class="flex flex-row justify-start items-center gap-3">
@@ -29,7 +29,7 @@
                     <img src="./assets/checkbox.png" alt="Ticked image">
                     <h1 id="Comp" class="text-3xl font-bold">23</h1>
                 </div>
-                <div class="p-3 bg-slate-100 rounded-full">
+                <div id="swiTch" class="p-3 bg-slate-100 rounded-full">
                     <img src="./assets/theme-btn.png" alt="Theme button">
                 </div>
             </section>
@@ -50,7 +50,7 @@
                             </div>
                         </div>
     
-                        <div class="w-5/12 cursor-pointer flex flex-row justify-start items-center p-5 gap-6 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-lg">
+                        <div id="QandA" class="w-5/12 cursor-pointer flex flex-row justify-start items-center p-5 gap-6 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-lg">
                             <img src="./assets/board.png" alt="Board">
                             <p class="text-xl font-bold text-white">Discover Something<br>New Today!</p>
                         </div>
@@ -203,5 +203,11 @@
     <script src="./Scripts/main.js"></script>
     <script src="./Scripts/Delete.js"></script>
     <script src="./Scripts/Time.js"></script>
+    <script>
+        document.getElementById("QandA").addEventListener('click', function(event){
+        event.preventDefault();
+        window.location.href="./QuesAns.html"
+    })
+    </script>
 </body>
 </html>
