@@ -50,7 +50,7 @@
                             </div>
                         </div>
     
-                        <div class="w-5/12 flex flex-row justify-start items-center p-5 gap-6 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-lg">
+                        <div class="w-5/12 cursor-pointer flex flex-row justify-start items-center p-5 gap-6 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-lg">
                             <img src="./assets/board.png" alt="Board">
                             <p class="text-xl font-bold text-white">Discover Something<br>New Today!</p>
                         </div>
@@ -69,7 +69,7 @@
                         <div class="bg-white rounded-lg p-2 w-6/12 text-center">
                             <h4 class="font-semibold">ShopEase</h4>
                         </div>
-                        <h1 class="font-bold text-xl">Fix Mobile Button Issue </h1>
+                        <h1 id="taskA" class="font-bold text-xl">Fix Mobile Button Issue </h1>
                         <div class="p-2 bg-white h-18 text-left rounded-lg ">
                             <p class="truncate">Debug using Chrome <br>DevTools, check for overlapping elements, and ensure onClick works properly.</p>
                         </div>
@@ -86,7 +86,7 @@
                         <div class="bg-white rounded-lg p-2 w-6/12 text-center">
                             <h4 class="font-semibold">SwiftPay</h4>
                         </div>
-                        <h1 class="font-bold text-xl">Add Dark Mode</h1>
+                        <h1 id="taskB" class="font-bold text-xl">Add Dark Mode</h1>
                         <div class="p-2 bg-white h-18 text-left rounded-lg ">
                             <p class="truncate">Store the user's preference in<br>localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                         </div>
@@ -103,7 +103,7 @@
                         <div class="bg-white rounded-lg p-2 w-6/12 text-center">
                             <h4 class="font-semibold">CloudSync</h4>
                         </div>
-                        <h1 class="font-bold text-xl">Optimize  Home page</h1>
+                        <h1 id="taskC" class="font-bold text-xl">Optimize  Home page</h1>
                         <div class="p-2 bg-white h-18 text-left rounded-lg ">
                             <p class="truncate">Debug using Chrome <br>DevTools, check for overlapping elements, and ensure onClick works properly.</p>
                         </div>
@@ -120,7 +120,7 @@
                         <div class="bg-white rounded-lg p-2 w-6/12 text-center">
                             <h4 class="font-semibold">Meta</h4>
                         </div>
-                        <h1 class="font-bold text-xl">Add new emoji 🤲</h1>
+                        <h1 id="taskD" class="font-bold text-xl">Add new emoji 🤲</h1>
                         <div class="p-2 bg-white h-18 text-left rounded-lg ">
                             <p class="truncate">Debug using Chrome <br>DevTools, check for overlapping elements, and ensure onClick works properly.</p>
                         </div>
@@ -137,7 +137,7 @@
                         <div class="bg-white rounded-lg p-2 w-6/12 text-center">
                             <h4 class="font-semibold">Google LLC</h4>
                         </div>
-                        <h1 class="font-bold text-xl">Integrate OpenAI API</h1>
+                        <h1 id="taskE" class="font-bold text-xl">Integrate OpenAI API</h1>
                         <div class="p-2 bg-white h-18 text-left rounded-lg ">
                             <p class="truncate">Debug using Chrome <br>DevTools, check for overlapping elements, and ensure onClick works properly.</p>
                         </div>
@@ -154,7 +154,7 @@
                         <div class="bg-white rounded-lg p-2 w-6/12 text-center">
                             <h4 class="font-semibold">GlassDoor</h4>
                         </div>
-                        <h1 class="font-bold text-xl">Improve Job searching</h1>
+                        <h1 id="taskF" class="font-bold text-xl">Improve Job searching</h1>
                         <div class="p-2 bg-white h-18 text-left rounded-lg ">
                             <p class="truncate">Debug using Chrome <br>DevTools, check for overlapping elements, and ensure onClick works properly.</p>
                         </div>
@@ -168,20 +168,25 @@
                     </div>
                 </div>
             </section>
-            <section class="w-3/12 bg-white rounded-lg m-4">
+            <section id="hiTory" class="w-3/12 bg-white rounded-lg m-4">
                 <div class="border-b-2 border-dashed border-slate-200">
                     <div class="flex flex-col justify-center items-center gap-3 p-6">
                         <div class="flex flex-row gap-3 items-center justify-center">
                             <img src="./assets/activity.png" alt="activity">
                             <h2 class="text-xl">Activity Log</h2>
                         </div>
-                        <button class="btn rounded-lg bg-blue-500 text-white font-bold">Clear History</button>
+                        <button id="clrHist" class="btn rounded-lg bg-blue-500 text-white font-bold">Clear History</button>
                     </div>
+                </div>
+
+                <div id="logContainer" class="flex flex-col gap-2 p-4 text-left">
+
                 </div>
             </section>
         </section>
     </section>
 
     <script src="./Scripts/main.js"></script>
+    <script src="./Scripts/Delete.js"></script>
 </body>
 </html>
